@@ -41,7 +41,6 @@ func GetMigrator(tableName string, engine Engine) (*StartUpMigrator, error) {
 
 //Run - start migrations execution. Returns executed statements and general error
 func (migrator *StartUpMigrator) Run(statements []string) ([]StatementResult, error) {
-
 	var result []StatementResult
 	defer migrator.engine.Disconnect()
 

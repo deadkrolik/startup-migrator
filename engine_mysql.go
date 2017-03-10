@@ -14,7 +14,7 @@ type EngineMysql struct {
 	table      string
 }
 
-//GetEngineMysql - get engine object with connection config like "user:pass@host/dbname?charset=utf8"
+//GetEngineMysql - get engine object with connection config like "user:pass@/dbname?charset=utf8"
 func GetEngineMysql(dsn string) *EngineMysql {
 	return &EngineMysql{dsn: dsn}
 }

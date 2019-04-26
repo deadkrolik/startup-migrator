@@ -24,7 +24,7 @@ const (
 		"`id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY," +
 		"`hash` varchar(32) NOT NULL," +
 		"`statement` varchar(600) NOT NULL," +
-		"`created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP" +
+		"`created_at` datetime DEFAULT '0000-00-00 00:00:00' NOT NULL" +
 		") ENGINE=InnoDB DEFAULT CHARSET=utf8"
 )
 
